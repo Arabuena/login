@@ -2,9 +2,11 @@ import React from 'react';
 
 import {InputContainer} from './styles';
 
- function  Inputx () {
+ function  Inputx({value, onChange}) {
     return (
-      <InputContainer><input/></InputContainer>  
+      <InputContainer>
+      <input value={value} onChange={onChange}/>
+      </InputContainer>  
     )
 }
 export default Inputx;
